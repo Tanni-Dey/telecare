@@ -1,0 +1,1503 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* ------fonts------ */
+
+@font-face {
+    font-family: 'Tiempos Headline';
+    src: url(../fonts/TiemposHeadline-Bold.woff);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Tiempos Headline';
+    src: url(../fonts/TiemposHeadline-Medium.woff);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Tiempos Headline';
+    src: url(../fonts/TiemposHeadline-Regular.woff);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Tiempos Headline';
+    src: url(../fonts/TiemposHeadline-Light.woff);
+    font-weight: 300;
+}
+
+/* -----------common css---------- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+button {
+    border: none;
+}
+
+/* -----header------ */
+._tele_header_wrapper {
+    background: #F6F3EB;
+}
+
+/* ------navbar-------- */
+._tele_header_navbar {
+    padding: 20px 0;
+    align-items: center;
+}
+
+._tele_nav_list {
+    margin: 0 auto;
+}
+
+._tele_nav_item {
+    margin-right: 34px;
+}
+
+._tele_nav_item:last-child {
+    margin-right: 0;
+}
+
+._tele_nav_link {
+    font-family: 'Albert Sans';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    color: rgba(53, 53, 53, 0.8);
+    padding: 4px 0 !important;
+    transition: 0.2s all ease;
+}
+
+._tele_nav_link.active {
+    color: #034A46 !important;
+    border-bottom: 1px solid #034A46;
+}
+
+._tele_nav_link:hover {
+    color: #034A46;
+    border-bottom: 1px solid #034A46;
+}
+
+._tele_nav_dropdown::after {
+    display: none;
+}
+
+._tele_nav_book_button {
+    clip-path: polygon(0 25%, 10% 0, 100% 0, 100% 75%, 90% 100%, 0 100%);
+    padding: 1px 1px;
+    background-color: #034A46;
+}
+
+._tele_nav_book_btn {
+    font-family: 'Albert Sans';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    color: #034A46;
+    padding: 17px 36px;
+    background: #F6F3EB;
+    clip-path: polygon(0 25%, 10% 0, 100% 0, 100% 75%, 90% 100%, 0 100%);
+    transition: 0.2s all ease;
+}
+
+._tele_nav_book_btn:hover {
+    background-color: #034A46;
+    color: #F6EFDB;
+}
+
+/* -------hero section------ */
+._tele_header_wrap {
+    padding-top: 120px;
+}
+
+._tele_hero_img {
+    /* border-top-left-radius: 50%;
+    border-top-right-radius: 50%; */
+    /* border-radius: 51% 49% 0% 0% / 25% 25% 0% 0%; */
+    clip-path: ellipse(80% 95% at 50% 95%);
+}
+
+._tele_hero_tittle {
+    font-family: 'Tiempos Headline', serif;
+    font-weight: 400;
+    font-size: 74px;
+    line-height: 1.2;
+    text-align: center;
+    color: #353535;
+    margin-bottom: 30px;
+}
+
+._tele_hero_tittle_span {
+    color: #034A46;
+    position: relative;
+    z-index: 1;
+}
+
+._tele_hero_tittle_span::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-image: url("../images/tittle_after.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: "";
+    height: 43px;
+    width: 100%;
+    z-index: -1;
+}
+
+._tele_hero_p {
+    font-family: 'Albert Sans';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+    color: rgba(53, 53, 53, 0.8);
+    padding: 0 16%;
+    padding-bottom: 40px;
+}
+
+._tele_hero_btn_grp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+._tele_hero_book_btn {
+    font-family: 'Albert Sans';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    /* color: #8ea6a5; */
+    color: #034A46;
+    padding: 17px 44px;
+    /* background-color: transparent; */
+    margin-right: 28px;
+    background: #FFCE00;
+    clip-path: polygon(0 25%, 10% 0, 100% 0, 100% 75%, 90% 100%, 0 100%);
+    transition: 0.2s all ease;
+}
+
+._tele_hero_book_btn:hover {
+    background-color: #ffd429;
+}
+
+._tele_hero_call_link {
+    display: flex;
+    align-items: center;
+    font-family: 'Albert Sans';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #353535;
+    transition: 0.2s all ease;
+}
+
+._tele_hero_phone_icon {
+    margin-right: 8px;
+}
+
+._tele_hero_call_link:hover {
+    color: #7d7d7d;
+}
+
+._tele_hero_image {
+    margin-top: 68px;
+    position: relative;
+}
+
+._tele_hero_image_svg {
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    z-index: 1;
+}
+
+/* -----insurance section----- */
+._tele_insurance {
+    padding-top: 100px;
+    padding-bottom: 80px;
+    background: #F6F3EB;
+}
+
+._tele_ins_heading_tittle {
+    font-family: 'Tiempos Headline';
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 1.2;
+    text-align: center;
+    color: #353535;
+    margin-bottom: 18px;
+}
+
+._tele_ins_heading_p {
+    font-family: 'Albert Sans';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+    padding: 0 29%;
+    color: rgba(53, 53, 53, 0.8);
+}
+
+._tele_ins_slide_img {
+    margin-right: 64px;
+}
+
+._tele_ins_slider {
+    margin-top: 60px;
+}
+
+/* ---------covid section------- */
+._tele_covid {
+    padding: 130px 0
+}
+
+._tele_covid_svg {
+    margin-bottom: 28px;
+
+}
+
+._tele_covid_tittle {
+    font-family: 'Tiempos Headline';
+    font-weight: 300;
+    font-size: 58px;
+    line-height: 1.2;
+    color: #353535;
+    margin-bottom: 22px;
+    max-width: 85%;
+}
+
+._tele_covid_p {
+    font-family: 'Albert Sans';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    color: rgba(53, 53, 53, 0.8);
+    margin-bottom: 40px;
+    max-width: 80%;
+}
+
+._tele_covid_btn {
+    font-family: 'Albert Sans';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    color: #034A46;
+    padding: 17px 44px;
+    margin-right: 28px;
+    background: #FFCE00;
+    clip-path: polygon(0 25%, 10% 0, 100% 0, 100% 75%, 90% 100%, 0 100%);
+    transition: 0.2s all ease;
+}
+
+._tele_covid_btn:hover {
+    background-color: #ffd429;
+}
+
+._tele_covid_main_img {
+    max-width: 85%;
+    background-image: url(../images/cost_img_bg.png);
+    background-size: 80% 85%;
+    background-repeat: no-repeat;
+    padding-bottom: 26px;
+    padding-left: 20px;
+    background-position: -10% 95%;
+}
+
+._tele_covid_image {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* -----answwer section----- */
+._tele_ans {
+    background: #F6F3EB;
+    padding-top: 100px;
+    padding-bottom: 90px;
+    position: relative;
+    z-index: 1;
+}
+
+._tele_ans_bg_svg {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    align-items: flex-end;
+    z-index: -1;
+}
+
+._tele_heading {
+    margin-bottom: 56px;
+}
+
+._tele_heading_tittle {
+    font-family: 'Tiempos Headline';
+    font-weight: 300;
+    font-size: 58px;
+    line-height: 1.2;
+    text-align: center;
+    color: #353535;
+    margin: 0 auto 56px auto;
+    max-width: 73%;
+}
+
+._tele_single_ans {
+    padding: 26px 40px 38px 40px;
+    background: #F6F3EB;
+    border: 1px solid rgba(53, 53, 53, 0.2);
+    transition: 0.2s all ease;
+}
+
+._tele_single_ans:hover {
+    background-color: #fff;
+    border-color: transparent;
+}
+
+._tele_single_ans_svg {
+    margin-bottom: 38px;
+}
+
+._tele_single_ans_tittle {
+    font-family: 'Albert Sans';
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 1.2;
+    color: #353535;
+    margin-bottom: 30px;
+}
+
+._tele_single_ans_link {
+    font-family: 'Albert Sans';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
+    color: #034A46;
+    transition: 0.2s all ease;
+}
+
+._tele_single_ans_link_text {
+    margin-right: 22px;
+}
+
+._tele_single_ans_link:hover {
+    color: #7d7d7d;
+}
+
+/* ---------Comprehensive care section------ */
+._tele_care {
+    padding: 130px 0;
+}
+
+._tele_care_heading_tittle {
+    font-family: 'Tiempos Headline';
+    font-weight: 300;
+    font-size: 58px;
+    line-height: 1.2;
+    text-align: center;
+    color: #353535;
+    max-width: 65%;
+    margin: 0 auto;
+}
+
+._tele_care_birth {
+    margin-top: 110px;
+    margin-bottom: 130px;
+}
+
+._tele_birthcare_tittle {
+    font-family: 'Tiempos Headline';
+    font-weight: 300;
+    font-size: 55px;
+    line-height: 1.2;
+    color: #353535;
+    margin-bottom: 22px;
+    max-width: 80%;
+}
+
+._tele_birthcare_p {
+    font-family: 'Albert Sans';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    color: rgba(53, 53, 53, 0.8);
+    margin-bottom: 40px;
+    max-width: 65%;
+}
+
+._tele_birthcare_book_btn {
+    font-family: 'Albert Sans';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    /* color: #8ea6a5; */
+    color: #034A46;
+    padding: 17px 44px;
+    /* background-color: transparent; */
+    margin-right: 28px;
+    background: #FFCE00;
+    clip-path: polygon(0 25%, 10% 0, 100% 0, 100% 75%, 90% 100%, 0 100%);
+    transition: 0.2s all ease;
+    margin-right: 28px;
+}
+
+._tele_birthcare_book_btn:hover {
+    background-color: #ffd429;
+}
+
+._tele_birthcare_book_link {
+    display: inline;
+    font-family: 'Albert Sans';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    color: rgba(53, 53, 53, 0.8);
+    cursor: pointer;
+    transition: 0.2s all ease;
+}
+
+._tele_birthcare_book_link_text {
+    margin-right: 8px;
+}
+
+._tele_birthcare_book_link:hover {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+._tele_birthcare_bg {
+    margin-top: -435px;
+    top: 435px;
+    right: -180px;
+    position: relative;
+    max-width: 65%;
+    rotate: -15deg;
+}
+
+._tele_birthcare_img2 {
+    border-radius: 50% 45% 50% 45%;
+    rotate: 110deg;
+    max-width: 80%;
+
+}
+
+._tele_birthcare_img1 {
+    border-radius: 50% 45% 50% 45%;
+    rotate: -30deg;
+}
+
+._tele_birth_care_image {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+
+._tele_birthcare_img1_div {
+    position: relative;
+    max-width: 40%;
+    position: absolute;
+    left: 7%;
+    top: -35px;
+    z-index: 20;
+    rotate: -29deg;
+
+}
+
+._tele_birthcare_img1_div::before {
+    position: absolute;
+    border-radius: 100% 0% 75% 0% / 100% 0% 82% 0%;
+    rotate: 169deg;
+    width: 60%;
+    height: 41%;
+    background: #F5F1EA;
+    content: '';
+    right: 3px;
+    bottom: 0;
+    z-index: 99;
+}
+
+._tele_cost {
+    margin-bottom: 147px;
+}
+
+._tele_cost_content {
+    max-width: 90%;
+    margin: 0 0 0 auto;
+}
+
+._tele_cost_main_img {
+    max-width: 80%;
+    background-image: url(../images/cost_img_bg.png);
+    background-size: 100% 90%;
+    background-repeat: no-repeat;
+    padding-bottom: 26px;
+    padding-left: 15px;
+    background-position: -40px 50px;
+}
+
+._tele_care_tittle {
+    font-family: 'Tiempos Headline';
+    font-weight: 300;
+    font-size: 58px;
+    line-height: 1.2;
+    color: #353535;
+    margin-bottom: 22px;
+    max-width: 90%;
+}
+
+._tele_care_p {
+    font-family: 'Albert Sans';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    color: rgba(53, 53, 53, 0.8);
+    margin-bottom: 40px;
+}
+
+._tele_care_button {
+    display: inline-block;
+    clip-path: polygon(0 25%, 10% 0, 100% 0, 100% 75%, 90% 100%, 0 100%);
+    padding: 1px 1px;
+    background-color: #034A46;
+}
+
+._tele_care_btn {
+    font-family: 'Albert Sans';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    /* color: #8ea6a5; */
+    color: rgba(53, 53, 53, 0.8);
+    padding: 17px 36px;
+    /* background-color: transparent; */
+    background: white;
+    clip-path: polygon(0 25%, 10% 0, 100% 0, 100% 75%, 90% 100%, 0 100%);
+    transition: 0.2s all ease;
+}
+
+._tele_care_btn:hover {
+    background: #034A46;
+    color: #F6EFDB;
+}
+
+._tele_ex_care_image {
+    position: relative;
+}
+
+._tele_ex_care_svg {
+    position: absolute;
+    left: 0;
+    top: -10%;
+}
+
+/* --------family saying section----- */
+._tele_family_saying {
+    padding-top: 47px;
+    padding-bottom: 139px;
+    position: relative;
+}
+
+._tele_family_saying_right_svg {
+    max-width: 20%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+._tele_family_saying_tittle {
+    font-family: 'Tiempos Headline';
+    font-weight: 300;
+    font-size: 58px;
+    line-height: 1.22;
+    text-align: center;
+    color: #353535;
+    margin-bottom: 50px;
+}
+
+._tele_fs_single_slide {
+    /* max-width: 70%; */
+    text-align: center;
+}
+
+._tele_fs_slide_p {
+    font-family: 'Albert Sans';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.6;
+    text-align: center;
+    color: rgba(53, 53, 53, 0.8);
+    margin-top: 24px;
+    margin-bottom: 28px;
+}
+
+._tele_fs_slide_bottom_text {
+    font-family: 'Albert Sans';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    color: #353535;
+    margin-bottom: 50px;
+}
+
+._tele_fs_slider_arrows {
+    position: relative;
+}
+
+.splide__arrow--prev {
+    position: absolute;
+    top: 0;
+    left: 35%;
+}
+
+.splide__arrow--next {
+    position: absolute;
+    top: 0;
+    right: 35%;
+}
+
+._tele_arrow_btn {
+    height: 35px;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid #034A46;
+}
+
+._tele_arrow_btn:disabled {
+    border-color: #918c8c;
+}
+
+._tele_arrow_btn:disabled span svg path {
+    stroke: #918c8c;
+}
+
+.splide__pagination {
+    margin-top: 15px;
+}
+
+.splide__pagination li {
+    margin-right: 10px;
+    display: flex;
+}
+
+.splide__pagination li:last-child {
+    margin-right: 0;
+}
+
+.splide__pagination__page {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #353535;
+    opacity: 0.5;
+    border: 0;
+    padding: 0;
+    transition: 0.2s all ease;
+}
+
+.splide__pagination li .is-active {
+    background-color: #034A46;
+    opacity: 1;
+}
+
+/* --------peiatric care section-------- */
+._tele_ped_care {
+    background: #F6EFDB;
+    padding-top: 75px;
+    padding-bottom: 164px;
+}
+
+._tele_ex_ped_care_content {
+    padding-left: 10%;
+    padding-top: 57px;
+}
+
+._tele_ex_ped_tittle {
+    font-family: 'Tiempos Headline';
+    font-weight: 300;
+    font-size: 58px;
+    line-height: 1.2;
+    color: #353535;
+    margin-bottom: 22px;
+    max-width: 80%;
+}
+
+._tele_ex_ped_single_step {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+._tele_ex_ped_single_step:last-child {
+    margin-bottom: 46px;
+}
+
+._tele_ex_ped_step_svg {
+    margin-right: 22px;
+}
+
+._tele_apple_playstore_card {
+    display: flex;
+    align-items: center;
+}
+
+._tele_apple_playstore_card_btn {
+    margin-right: 18px;
+    padding: 0;
+}
+
+._tele_apple_playstore_card_btn:last-child {
+    margin-right: 0;
+}
+
+._tele_ped_care_image {
+    display: flex;
+    justify-content: flex-end;
+}
+
+._tele_ped_care_main_img {
+    max-width: 85%;
+}
+
+/* ----------footer section------- */
+._tele_footer {
+    padding-top: 156px;
+    padding-bottom: 75px;
+    background-color: #034A46;
+    /* border-radius: 51% 49% 0% 0% / 25% 25% 0% 0%; */
+    /* border-radius: 50% 50% 0 0; */
+    clip-path: ellipse(100% 95% at 50% 95%);
+    margin-top: -184px;
+}
+
+._tele_email_content {
+    margin-bottom: 130px;
+}
+
+._tele_footer_hr {
+    color: #FFFFFF;
+}
+
+._tele_email_tittle {
+    font-family: 'Tiempos Headline';
+    font-weight: 300;
+    font-size: 58px;
+    line-height: 1.2;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0 auto 40px auto;
+    max-width: 80%;
+}
+
+._tele_email_form {
+    text-align: center;
+    position: relative;
+}
+
+._tele_email_svg {
+    position: absolute;
+    left: 25%;
+    bottom: 35%;
+}
+
+._tele_email_input {
+    width: 292px;
+    background: #FFFFFF;
+    padding: 24px 0;
+    padding-left: 60px;
+    padding-right: 30px;
+    border: none;
+    outline: none;
+    margin-right: 24px;
+}
+
+._tele_email_input::placeholder {
+    font-family: 'Albert Sans';
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #353535;
+    opacity: 0.65;
+}
+
+._tele_email_btn {
+    font-family: 'Albert Sans';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    color: #034A46;
+    background-color: #FFCE00;
+    transition: 0.2s all ease;
+    padding: 25px 44px;
+}
+
+._tele_email_btn:hover {
+    background-color: #ffd429;
+}
+
+._tele_main_footer {
+    padding-top: 74px;
+    padding-bottom: 106px;
+}
+
+._tele_footer_email {
+    font-family: 'Albert Sans';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 24px;
+}
+
+._tele_footer_num {
+    font-family: 'Albert Sans';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 46px;
+}
+
+._tele_footer_social {
+    display: flex;
+}
+
+._tele_footer_social_icon_item {
+    margin-right: 30px;
+}
+
+._tele_footer_social_icon_item:last-child {
+    margin-right: 0;
+}
+
+._tele_social_icon_link {
+    display: inline;
+    transition: 0.2s all ease;
+}
+
+._tele_social_icon_link:hover svg path {
+    fill: #FFCE00;
+}
+
+._tele_footer_link_tittle {
+    font-family: 'Albert Sans';
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.2;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 34px;
+}
+
+._tele_footer_list {
+    margin-bottom: 56px;
+}
+
+._tele_footer_item {
+    margin-bottom: 24px;
+}
+
+._tele_footer_link {
+    display: inline-block;
+    font-family: 'Albert Sans';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.2;
+    color: #FFFFFF;
+    transition: 0.2s all ease;
+}
+
+._tele_footer_link:hover {
+    color: #FFCE00;
+}
+
+._tele_footer_bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+._tele_footer_bottom_text {
+    font-family: 'Albert Sans';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+._tele_footer_bottom_list {
+    display: flex;
+}
+
+._tele_footer_bottom_item {
+    margin-right: 10px;
+}
+
+._tele_footer_bottom_item:last-child {
+    margin-right: 0;
+}
+
+._tele_footer_bottom_link {
+    font-family: 'Albert Sans';
+    display: inline;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+    transition: 0.2s all ease;
+}
+
+._tele_footer_bottom_link:hover {
+    color: rgba(154, 154, 154, 0.8);
+
+}
+
+/* ----------responsive------- */
+/* ----xl device---- */
+@media (max-width:1399px) {
+    ._tele_hero_tittle {
+        font-size: 64px;
+    }
+
+    ._tele_covid_tittle,
+    ._tele_heading_tittle,
+    ._tele_care_heading_tittle,
+    ._tele_care_tittle,
+    ._tele_birthcare_tittle,
+    ._tele_ex_ped_tittle,
+    ._tele_email_tittle {
+        font-size: 47px;
+    }
+
+    ._tele_cost_main_img {
+        padding-left: 0;
+        background-position: -23px 38px;
+    }
+
+    ._tele_birthcare_bg {
+        margin-top: -378px;
+        top: 378px;
+        right: -155px;
+    }
+
+    ._tele_ex_ped_tittle {
+        max-width: 70%;
+    }
+
+    ._tele_email_svg {
+        left: 20%;
+    }
+
+}
+
+/* ------large device------ */
+@media (max-width:1199px) {
+    ._tele_hero_tittle {
+        font-size: 52px;
+    }
+
+    ._tele_covid_tittle,
+    ._tele_heading_tittle,
+    ._tele_care_heading_tittle,
+    ._tele_care_tittle,
+    ._tele_birthcare_tittle,
+    ._tele_ex_ped_tittle,
+    ._tele_email_tittle,
+    ._tele_family_saying_tittle {
+        font-size: 40px;
+    }
+
+    ._tele_cost_main_img {
+        padding-left: 7px;
+        background-position: -30px 29px;
+    }
+
+
+    ._tele_email_svg {
+        left: 13%;
+    }
+
+    ._tele_birthcare_bg {
+        margin-top: -315px;
+        top: 315px;
+        right: -130px;
+    }
+
+    ._tele_single_ans_link_text {
+        margin-right: 10px;
+    }
+}
+
+/* -----medium device----- */
+@media (max-width:991px) {
+    ._tele_nav_toggler {
+        border: none;
+    }
+
+    ._tele_nav_toggler:focus {
+        box-shadow: none;
+    }
+
+    ._tele_nav_dropdown_list {
+        margin-bottom: 20px;
+    }
+
+    ._tele_header_wrap {
+        padding-top: 50px;
+    }
+
+    ._tele_hero_heading {
+        max-width: 85%;
+        margin: 0 auto 30px auto;
+    }
+
+    ._tele_nav_link {
+        display: inline-block;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+
+    ._tele_nav_book_button {
+        display: inline-block;
+    }
+
+    ._tele_hero_tittle {
+        font-size: 43px;
+    }
+
+    ._tele_nav_book_btn,
+    ._tele_hero_book_btn,
+    ._tele_birthcare_book_btn,
+    ._tele_care_btn,
+    ._tele_covid_btn {
+        padding: 12px 32px;
+    }
+
+    ._tele_fs_slide_p {
+        font-size: 18px;
+    }
+
+    ._tele_hero_image {
+        padding-top: 40px;
+    }
+
+    ._tele_insurance {
+        padding-top: 60px;
+        padding-bottom: 50px;
+    }
+
+    ._tele_covid,
+    ._tele_care {
+        padding: 50px 0;
+    }
+
+    ._tele_care_heading_tittle {
+        max-width: 85%;
+    }
+
+    ._tele_ans {
+        padding-top: 70px;
+        padding-bottom: 60px;
+    }
+
+    ._tele_single_ans {
+        margin-bottom: 30px;
+    }
+
+    ._tele_row {
+        flex-direction: column-reverse;
+    }
+
+    ._tele_birthcare_bg {
+        margin-top: -470px;
+        top: 470px;
+        right: -200px;
+    }
+
+    ._tele_birth_care_image {
+        margin-bottom: 150px;
+    }
+
+    ._tele_cost_main_img {
+        background-position: -30px 55px;
+    }
+
+    ._tele_cost_image {
+        margin-bottom: 40px;
+    }
+
+    ._tele_birthcare_p,
+    ._tele_care_p {
+        margin-bottom: 25px;
+    }
+
+    ._tele_care_birth {
+        margin-bottom: 65px;
+    }
+
+    ._tele_cost_content {
+        margin: 0;
+    }
+
+    ._tele_ex_care_image {
+        margin-bottom: 56px;
+    }
+
+    ._tele_ex_ped_care_content {
+        padding-top: 0;
+    }
+
+    ._tele_family_saying {
+        padding-top: 20px;
+        padding-bottom: 100px;
+    }
+
+    ._tele_family_saying_tittle {
+        margin-bottom: 30px;
+    }
+
+    ._tele_family_saying_right_svg {
+        display: none;
+    }
+
+    ._tele_footer {
+        clip-path: ellipse(115% 95% at 50% 95%);
+    }
+
+    ._tele_email_content {
+        margin-bottom: 72px;
+    }
+
+    ._tele_email_svg {
+        left: 18%;
+    }
+
+    ._tele_main_footer {
+        padding-top: 42px;
+        padding-bottom: 96px;
+    }
+}
+
+/* -----small device----- */
+@media (max-width:767px) {
+    ._tele_hero_heading {
+        max-width: 100%;
+    }
+
+    ._tele_hero_tittle {
+        font-size: 40px;
+        margin-bottom: 22px;
+    }
+
+    ._tele_hero_book_btn {
+        margin-bottom: 24px;
+        margin-right: 0px;
+    }
+
+    ._tele_hero_btn_grp {
+        display: block;
+        text-align: center;
+    }
+
+    ._tele_hero_call_link {
+        justify-content: center;
+        font-size: 18px;
+    }
+
+    ._tele_hero_image {
+        margin-top: 56px;
+    }
+
+    ._tele_hero_img {
+        min-height: 526px;
+    }
+
+    ._tele_hero_image_svg {
+        left: 20%;
+    }
+
+    ._tele_ins_heading_tittle {
+        font-size: 26px;
+    }
+
+    ._tele_ins_heading_p {
+        font-size: 16px;
+        padding: 0;
+        margin-bottom: 34px;
+    }
+
+    ._tele_hero_p,
+    ._tele_covid_p,
+    ._tele_birthcare_p,
+    ._tele_care_p {
+        font-size: 16px;
+        padding: 0;
+        margin-bottom: 25px;
+    }
+
+    ._tele_ins_slider {
+        margin-top: 34px;
+    }
+
+    ._tele_covid_svg {
+        margin-bottom: 18px;
+    }
+
+    ._tele_covid_tittle,
+    ._tele_care_heading_tittle,
+    ._tele_care_tittle,
+    ._tele_birthcare_tittle,
+    ._tele_ex_ped_tittle,
+    ._tele_email_tittle,
+    ._tele_family_saying_tittle {
+        font-size: 30px;
+        margin-bottom: 18px;
+    }
+
+    ._tele_heading_tittle {
+        max-width: 100%;
+    }
+
+    ._tele_covid_image {
+        margin-top: 46px;
+    }
+
+    ._tele_covid_main_img {
+        background-position: -10% 88%;
+    }
+
+    ._tele_ans {
+        padding-top: 46px;
+        padding-bottom: 56px;
+    }
+
+    ._tele_heading {
+        margin-bottom: 36px;
+    }
+
+    ._tele_heading_tittle {
+        font-size: 34px;
+    }
+
+    ._tele_single_ans {
+        margin-bottom: 30px;
+        padding-left: 30px;
+        padding-right: 35px;
+        padding-bottom: 38px;
+    }
+
+    ._tele_care_heading {
+        margin-bottom: 64px;
+    }
+
+    ._tele_fs_slide_p {
+        font-size: 20px;
+    }
+
+    ._tele_care_birth {
+        margin-top: 64px;
+        margin-bottom: 90px;
+    }
+
+    ._tele_birthcare_bg {
+        margin-top: -355px;
+        top: 355px;
+        right: -145px;
+    }
+
+    ._tele_cost {
+        margin-bottom: 127px;
+    }
+
+    ._tele_cost_main_img {
+        background-position: -30px 35px;
+    }
+
+    ._tele_fs_slider_arrows {
+        max-width: 100%;
+    }
+
+    ._tele_ped_care {
+        padding-top: 46px;
+        padding-bottom: 110px;
+    }
+
+    ._tele_ex_ped_tittle {
+        margin-bottom: 36px;
+    }
+
+    ._tele_ex_ped_single_step {
+        margin-bottom: 20px;
+    }
+
+    ._tele_ex_ped_single_step:last-child {
+        margin-bottom: 38px;
+    }
+
+    ._tele_ex_ped_step_p {
+        font-size: 16px;
+    }
+
+    ._tele_apple_playstore_card {
+        margin-bottom: 46px;
+    }
+
+    ._tele_footer {
+        margin-top: -179px;
+        clip-path: ellipse(150% 95% at 50% 95%);
+        padding-top: 97px;
+        padding-bottom: 60px;
+    }
+
+    ._tele_email_tittle {
+        margin-bottom: 38px;
+    }
+
+    ._tele_email_input {
+        width: 333px;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 18px;
+    }
+
+    ._tele_email_input::placeholder {
+        font-size: 16px;
+    }
+
+    ._tele_email_svg {
+        left: 22%;
+        bottom: inherit;
+        top: 14%;
+    }
+
+    ._tele_email_btn {
+        padding: 25px 122px;
+    }
+
+
+    ._tele_footer_bottom {
+        display: block;
+        text-align: center;
+    }
+
+    ._tele_footer_bottom_text {
+        margin-bottom: 18px;
+    }
+
+    ._tele_footer_bottom_list {
+        justify-content: center;
+    }
+}
+
+@media (max-width:575px) {
+    ._tele_covid_main_img {
+        background-position: 3% 88%;
+    }
+
+    ._tele_birthcare_bg {
+        margin-top: -375px;
+        top: 375px;
+        right: -155px;
+    }
+
+    ._tele_cost_main_img {
+        background-position: -30px 37px;
+    }
+
+    ._tele_email_svg {
+        left: 24%;
+    }
+}
+
+@media (max-width:420px) {
+    ._tele_covid_main_img {
+        background-position: 12% 77%;
+    }
+
+    ._tele_cost_main_img {
+        background-position: -10px 20px;
+    }
+
+    ._tele_birthcare_bg {
+        margin-top: -270px;
+        top: 270px;
+        right: -110px;
+    }
+
+    .splide__arrow--prev {
+        left: 25%;
+    }
+
+    .splide__arrow--next {
+        right: 25%;
+    }
+
+    ._tele_footer {
+        clip-path: ellipse(180% 95% at 50% 95%);
+    }
+
+    ._tele_email_svg {
+        left: 14%;
+    }
+
+    ._tele_cost_main_img {
+        padding-bottom: 10px;
+        background-position: -21px 28px;
+    }
+}
+
+@media (max-width:390px) {
+
+    /* ._tele_birthcare_bg {
+        margin-top: -245px;
+        top: 245px;
+        right: -97px;
+    } */
+    ._tele_birthcare_bg {
+        margin-top: -250px;
+        top: 250px;
+        right: -103px;
+    }
+}
